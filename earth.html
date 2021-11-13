@@ -4,13 +4,14 @@
 <!-- we import arjs version without NFT but with marker + location based support -->
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
-<script src="https://raw.githack.com/eskrano/masters-diploma-work/main/app.js"></script>
+<script src="./app.js"></script>
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded vr-mode-ui="enabled: false"
+        renderer="logarithmicDepthBuffer: true;"
         gesture-detector
         id = "scene"
-        arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        arjs=' debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
 
         <!-- <a-marker>
