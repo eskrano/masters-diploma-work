@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<!-- we import arjs version without NFT but with marker + location based support -->
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-
 <script src="https://raw.githack.com/eskrano/masters-diploma-work/main/app.js"></script>
 
 <body style="margin : 0px; overflow: hidden;">
@@ -12,13 +10,6 @@
         gesture-detector
         id = "scene"
         arjs='sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-
-
-        <!-- <a-marker>
-            <a-entity position="0 -1 1"
-                gltf-model="https://raw.githubusercontent.com/eskrano/masters-diploma-work/main/models/ua_map.gltf"
-                scale="0.4 0.4 0.4" class="clickable" markerhandler></a-entity>
-        </a-marker> -->
 
         <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"  type='barcode' value='6'>
             <a-entity
